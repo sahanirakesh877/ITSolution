@@ -1,10 +1,12 @@
-import React from 'react'
+import React from "react";
 
 const About = () => {
   return (
     <>
+    
 
-<section className="home-company-area bg-color">
+
+      <section className="home-company-area bg-color">
   <div className="container">
     <div className="row align-items-center">
       <div className="col-lg-6 col-md-12">
@@ -28,9 +30,8 @@ const About = () => {
     </div>
   </div>
 </section>
-
     </>
-  )
-}
+  );
+};
 
-export default About
+export default About;

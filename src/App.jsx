@@ -4,7 +4,6 @@ import { useEffect } from "react";
 
 import Home from "./page/Home";
 import Service from "./page/Service";
-import About from "./page/About";
 import Contact from "./page/Contact";
 import ServiceDetails from "./page/ServiceDetails";
 import Blog from "./page/Blog";
@@ -12,6 +11,7 @@ import BlogDetails from "./page/BlogDetails";
 import Header from "./components/Header";
 import Footer from "./components/Footer";
 import Navbar from "./components/Navbar";
+import HomeAbout from "./page/HomeAbout";
 
 const App = () => {
   useEffect(() => {
@@ -46,7 +46,7 @@ const App = () => {
         <Route path="/" element={<Home />} />
         <Route path="/service" element={<Service />} />
         <Route path="/service/:id" element={<ServiceDetails />} />
-        <Route path="/about" element={<About />} />
+        <Route path="/about" element={<HomeAbout />} />
         <Route path="/contact" element={<Contact />} />
         <Route path="/blog" element={<Blog />} />
         <Route path="/blog/:id" element={<BlogDetails />} />
