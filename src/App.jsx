@@ -10,7 +10,7 @@ import Header from "./components/Header";
 import Footer from "./components/Footer";
 import Navbar from "./components/Navbar";
 import HomeAbout from "./page/HomeAbout";
-import Tech from "./page/Tech";
+import Career from "./page/Career";
 
 const App = () => {
   const [isMobile, setIsMobile] = useState(window.innerWidth <= 768);
@@ -54,7 +54,7 @@ const App = () => {
         <Route path="/service/:title" element={<ServiceDetails />} />
         <Route path="/about" element={<HomeAbout />} />
         <Route path="/contact" element={<Contact />} />
-        <Route path="/tech" element={<Tech />} />
+        <Route path="/career" element={<Career />} />
       </Routes>
       <Footer />
     </>

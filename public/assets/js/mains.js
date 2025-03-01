@@ -190,12 +190,12 @@ jQuery(function ($) {
     });
 
     // FAQ Accordion
-    $('.accordion').find('.accordion-title').on('click', function() {
-        $(this).toggleClass('active');
-        $(this).next().slideToggle('fast');
-        $('.accordion-content').not($(this).next()).slideUp('fast');
-        $('.accordion-title').not($(this)).removeClass('active');
-    });
+    // $('.accordion').find('.accordion-title').on('click', function() {
+    //     $(this).toggleClass('active');
+    //     $(this).next().slideToggle('fast');
+    //     $('.accordion-content').not($(this).next()).slideUp('fast');
+    //     $('.accordion-title').not($(this)).removeClass('active');
+    // });
 
     // Subscribe form
     $(".newsletter-form").validator().on("submit", function(event) {

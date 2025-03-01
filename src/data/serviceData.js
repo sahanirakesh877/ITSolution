@@ -1,6 +1,5 @@
 const servicedata = [
   {
-    id: 1,
     img: "/assets/images/service/s1.png",
     title: "Visual Design",
     subtitle:
@@ -10,7 +9,6 @@ const servicedata = [
     imgicon: "",
   },
   {
-    id: 2,
     img: "/assets/images/service/s2.png",
     title: "Development",
     subtitle:
@@ -20,7 +18,6 @@ const servicedata = [
     imgicon: "",
   },
   {
-    id: 3,
     img: "/assets/images/service/s3.png",
     title: "QA Testing",
     subtitle:
@@ -30,7 +27,6 @@ const servicedata = [
     imgicon: "",
   },
   {
-    id: 4,
     img: "/assets/images/service/s4.png",
     title: "IT Management",
     subtitle:
@@ -40,7 +36,6 @@ const servicedata = [
     imgicon: "",
   },
   {
-    id: 5,
     img: "/assets/images/service/s5.png",
     title: "Cyber Security",
     subtitle:
@@ -50,7 +45,6 @@ const servicedata = [
     imgicon: "",
   },
   {
-    id: 6,
     img: "/assets/images/service/s6.png",
     title: "Wireless Connectivity",
     subtitle:

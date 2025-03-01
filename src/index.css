@@ -1,48 +1,4 @@
 
-/*==============================================
-Template Name: Toptech - Toptech It Solutions HTML5 Template 
-Author:  https://themeforest.net/user/dreamit-solution
-Description: Description
-Version: 1.0.0
-Text Domain: Toptech
-Tags: consulting, finance, corporate, business, consultant, multipurpose, technology, it-solution, software, agency, company, portfolio, bangking, insurance, digital-agency, digital-marketing.
-================================================*/
-
-/*TABLE OF CONTENTS*/
-/*=====================
-01. Toptech Header Area Css
-02. Toptech Top header Area Css 
-03. Toptech Hero Area Css
-04. Toptech About Area Css
-05. Toptech Feature Area Css 
-05. Toptech Service Area Css
-06. Toptech Services Details Area
-07. Toptech Faqs Area Css
-08. Toptech Work Process Area Css
-09. Toptech Portfolio Area Css
-10. Toptech Project Area Css
-10. Toptech Project Details Css
-11. Toptech Team Area Css
-12. Toptech Testimonial Area Css
-13. Toptech Brand Area Css
-14. Toptech Blog Area Css
-15. Toptech Blog Gird Area
-16. Toptech Blog Details Area
-17. Toptech Counter Area Css
-18. Toptech Footer Area Css
-19. Toptech Loader
-20. Toptech Scroll Up Css
-21. Toptech Search Popup css
-22. Toptech Top Menu
-23. Toptech Careers Area Css
-24. Toptech section-title css
-25. Toptech Contact Area
-26. Toptech Location Area Css
-27. Toptech Mission Area Css
-28. Toptech Choose US Area Css
-29. Toptech Team Details Area Css
-
-=======================*/
 
 
 
@@ -50,9 +6,9 @@ Tags: consulting, finance, corporate, business, consultant, multipurpose, techno
 /*---=====================================================
    <!--Toptech Header Area Css Style One-->
 =========================================================---*/
-.header-area {
-  margin-bottom: -106px;
-}
+/* .header-area {
+  margin-bottom: -6px;
+} */
 
 .header-menu {
   text-align: right;

@@ -5,10 +5,9 @@ const Navbar = () => {
     <>
       <div className="navbar-area">
         <div className="mobile-nav ">
-           <a href="index.html" className="logo  ">
-           <img src="/logos.png" alt="logo" />
+          <a href="index.html" className="logo  ">
+            <img src="/logos.png" alt="logo" />
           </a>
-       
         </div>
         <div className="main-nav">
           <div className="container">
@@ -19,7 +18,7 @@ const Navbar = () => {
               >
                 <ul className="navbar-nav text-left  ">
                   <li className="nav-item">
-                    <a href="/" className="nav-link dropdown-toggle active">
+                    <a href="/" className="nav-link active">
                       Home
                     </a>
                   </li>
@@ -31,34 +30,19 @@ const Navbar = () => {
                   </li>
 
                   <li className="nav-item">
-                    <a href="#" className="nav-link dropdown-toggle">
+                    <a href="/service" className="nav-link ">
                       Services
-                    </a>
-                    <ul className="dropdown-menu">
-                      <li className="nav-item">
-                        <a href="/service" className="nav-link">
-                          Services
-                        </a>
-                      </li>
-                      <li className="nav-item">
-                        <a href="/service/:1" className="nav-link">
-                          Services Details
-                        </a>
-                      </li>
-                    </ul>
-                  </li>
-
-                
-
-                  <li className="nav-item">
-                    <a href="/tech" className="nav-link">
-                      Technology{" "}
                     </a>
                   </li>
 
                   <li className="nav-item">
                     <a href="/contact" className="nav-link">
                       Contact{" "}
+                    </a>
+                  </li>
+                  <li className="nav-item">
+                    <a href="/career" className="nav-link">
+                      Career{" "}
                     </a>
                   </li>
                 </ul>
