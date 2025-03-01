@@ -22,20 +22,28 @@ const Header = () => {
       </div>
       <div className="col-lg-2 col-sm-4 text-right pl-0">
         <div className="header-content-right">
-          <ul className="header-social">
-            <li>
-              <a href="https://www.facebook.com/" target="_blank"><FaFacebookF /></a>
-            </li>
-            <li>
-              <a href="https://www.twitter.com/" target="_blank"> <FaWhatsapp /></a>
-            </li>
-            <li>
-              <a href="https://www.envelope.com/" target="_blank">  <FaEnvelope /></a>
-            </li>
-            <li>
-              <a href="https://www.youtube.com/" target="_blank"> <FaYoutube /></a>
-            </li>
-          </ul>
+        <ul className="header-social">
+                <li>
+                  <a href="https://www.facebook.com/" target="_blank" rel="noopener noreferrer">
+                    <FaFacebookF />
+                  </a>
+                </li>
+                <li>
+                  <a href="https://wa.me/9800000001" target="_blank" rel="noopener noreferrer">
+                    <FaWhatsapp />
+                  </a>
+                </li>
+                <li>
+                  <a href="mailto:netcorenepal@gmail.com" target="_blank" rel="noopener noreferrer">
+                    <FaEnvelope />
+                  </a>
+                </li>
+                <li>
+                  <a href="https://www.youtube.com/" target="_blank" rel="noopener noreferrer">
+                    <FaYoutube />
+                  </a>
+                </li>
+              </ul>
         </div>
       </div>
     </div>
