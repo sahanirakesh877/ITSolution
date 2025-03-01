@@ -1,13 +1,14 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 const Navbar = () => {
   return (
     <>
       <div className="navbar-area">
         <div className="mobile-nav ">
-          <a href="index.html" className="logo  ">
+          <Link to="/" className="logo  ">
             <img src="/logos.png" alt="logo" />
-          </a>
+          </Link>
         </div>
         <div className="main-nav">
           <div className="container">
@@ -18,38 +19,38 @@ const Navbar = () => {
               >
                 <ul className="navbar-nav text-left  ">
                   <li className="nav-item">
-                    <a href="/" className="nav-link active">
+                    <Link to="/" className="nav-link active">
                       Home
-                    </a>
+                    </Link>
                   </li>
 
                   <li className="nav-item">
-                    <a href="/about" className="nav-link">
+                    <Link to="/about" className="nav-link">
                       About
-                    </a>
+                    </Link>
                   </li>
 
                   <li className="nav-item">
-                    <a href="/service" className="nav-link ">
+                    <Link to="/service" className="nav-link ">
                       Services
-                    </a>
+                    </Link>
                   </li>
 
                   <li className="nav-item">
-                    <a href="/contact" className="nav-link">
+                    <Link to="/contact" className="nav-link">
                       Contact{" "}
-                    </a>
+                    </Link>
                   </li>
                   <li className="nav-item">
-                    <a href="/career" className="nav-link">
+                    <Link to="/career" className="nav-link">
                       Career{" "}
-                    </a>
+                    </Link>
                   </li>
                 </ul>
               </div>
 
               <div className="nav-btn">
-                <a href="/contact" className="box-btn">
+                <a to="/contact" className="box-btn">
                   Get Started
                 </a>
               </div>
