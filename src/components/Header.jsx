@@ -1,4 +1,5 @@
 import React from "react";
+import { FaEnvelope, FaFacebookF, FaWhatsapp, FaYoutube } from "react-icons/fa";
 
 const Header = () => {
   return (
@@ -23,16 +24,16 @@ const Header = () => {
         <div className="header-content-right">
           <ul className="header-social">
             <li>
-              <a href="https://www.facebook.com/" target="_blank"><i className="bx bxl-facebook" /></a>
+              <a href="https://www.facebook.com/" target="_blank"><FaFacebookF /></a>
             </li>
             <li>
-              <a href="https://www.twitter.com/" target="_blank"><i className="bx bxl-twitter" /></a>
+              <a href="https://www.twitter.com/" target="_blank"> <FaWhatsapp /></a>
             </li>
             <li>
-              <a href="https://www.envelope.com/" target="_blank"> <i className="bx bxs-envelope" /></a>
+              <a href="https://www.envelope.com/" target="_blank">  <FaEnvelope /></a>
             </li>
             <li>
-              <a href="https://www.youtube.com/" target="_blank"> <i className="bx bxl-youtube" /></a>
+              <a href="https://www.youtube.com/" target="_blank"> <FaYoutube /></a>
             </li>
           </ul>
         </div>
