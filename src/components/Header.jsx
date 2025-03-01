@@ -15,7 +15,7 @@ const Header = () => {
       <div className="col-lg-8 col-sm-8 text-right pr-0 ">
         <div className="header-content-right">
           <ul className="header-contact">
-            <li><a href="tel:+1123456789"><i className="bx bxs-phone-call" /> +1 123 456 789</a></li>
+            <li><a href="tel:+1123456789"><i className="bx bxs-phone-call" /> 9800000001</a></li>
             <li><a href="mailto:hello@paso.com"><i className="bx bxs-envelope" />netcorenepal@gmail.com</a></li>
           </ul>
         </div>
