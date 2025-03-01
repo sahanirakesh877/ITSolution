@@ -60,20 +60,11 @@ const ServiceDetails = () => {
               </div>
               <div className="col-lg-6">
                 <h3>{service.title}</h3>
+                <br />
+                <h4 className="text-dark">{service.subtitle}</h4>
+                <br />
                 <p>
-                  There are many variations of passages of Lorem Ipsum
-                  available, but the majority have suffered alteration in some
-                  form, by injected humour, or randomised words which dont look
-                  even slightly believable. If you are going to use a passage of
-                  Lorem Ipsum, you need to be sure there isnt anything
-                  embarrassing hidden in the middle of text. All the Lorem Ipsum
-                  generators on the Internet tend to repeat predefined chunks as
-                  necessary, making this the first true generator on the
-                  Internet. It uses a dictionary of over 200 Latin words,
-                  combined with a handful of model sentence structures, to
-                  generate Lorem Ipsum which looks reasonable. The generated
-                  Lorem Ipsum is therefore always free from repetition
-                  necessary, making this the first as necessary, making this
+                {service.description}
                 </p>
               </div>
             </div>

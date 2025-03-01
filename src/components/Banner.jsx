@@ -30,8 +30,12 @@ const Banner = () => {
                 </div>
                 <div className="col-lg-6">
                   <div className="banner-img">
-                    <img
+                    {/* <img
                       src="/assets/images/home-bg-1-img.png"
+                      alt="banner-img"
+                    /> */}
+                    <img
+                      src="/svgf/svg5.png"
                       alt="banner-img"
                     />
                   </div>

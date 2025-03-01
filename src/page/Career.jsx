@@ -1,5 +1,3 @@
-
-
 import React from "react";
 
 const Career = () => {
@@ -8,38 +6,32 @@ const Career = () => {
     {
       id: 1,
       title: "DevOps Engineer",
-      no:2
-
+      no: 2,
     },
     {
       id: 2,
       title: "Software Engineer",
-      no:2
-      
+      no: 2,
     },
     {
       id: 3,
       title: "UI/UX Designer",
-      no:3
-    
+      no: 3,
     },
     {
       id: 4,
       title: "Data Scientist",
-      no:2
-
+      no: 2,
     },
     {
       id: 5,
       title: "Product Manager",
-      no:1
-   
+      no: 1,
     },
     {
       id: 6,
       title: "Marketing Specialist",
-      no:5
-      
+      no: 5,
     },
   ];
 
@@ -85,15 +77,17 @@ const Career = () => {
             {jobListings.map((job) => (
               <div className="col-md-4 mb-4" key={job.id}>
                 <div className="card h-100 shadow border-0">
-                <div className="card-body d-flex align-items-center justify-content-between">
-  <h5 className="card-title mb-0">{job.title}</h5> {/* mb-0 removes margin-bottom */}
-  <div
-    className="border p-2 rounded-circle d-flex align-items-center justify-content-center"
-    style={{ width: "50px", height: "50px" }} // Fixed size for the circle
-  >
-    <h3 className="mb-0">{job.no}</h3> {/* mb-0 removes margin-bottom */}
-  </div>
-</div>
+                  <div className="card-body d-flex align-items-center justify-content-between">
+                    <h5 className="card-title mb-0">{job.title}</h5>{" "}
+                    {/* mb-0 removes margin-bottom */}
+                    <div
+                      className="border p-2 rounded-circle d-flex align-items-center justify-content-center"
+                      style={{ width: "50px", height: "50px" }} // Fixed size for the circle
+                    >
+                      <h3 className="mb-0">{job.no}</h3>{" "}
+                      {/* mb-0 removes margin-bottom */}
+                    </div>
+                  </div>
                 </div>
               </div>
             ))}
@@ -109,13 +103,9 @@ const Career = () => {
             Send your CV to us via email or WhatsApp for consideration.
           </p>
           <div className="d-flex justify-content-center gap-3">
-            <a
-              href="mailto:careers@example.com"
-              className="box-btn "
-            >
+            <a href="mailto:careers@example.com" className="box-btn ">
               <i className="fas fa-envelope me-2 "></i>Email CV
             </a>
-         
           </div>
         </div>
       </section>

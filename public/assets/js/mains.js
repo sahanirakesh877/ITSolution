@@ -134,38 +134,38 @@ jQuery(function ($) {
     });
 
     // Client Wrap
-	$('.client-wrap').owlCarousel({
-		loop:true,
-		margin:30,
-		nav:false,
-		mouseDrag: true,
-		items:1,
-		dots: false,
-		autoHeight: true,
-		autoplay: true,
-		smartSpeed: 800,
-		autoplayHoverPause: true,
-		center: false,
-		responsive:{
-			0:{
-				items:1,
-				margin: 10,
-			},
-			576:{
-				items:1,
-			},
-			768:{
-				items:2,
-				margin: 20,
-			},
-			992:{
-				items:2,
-			},
-			1200:{
-				items:2,
-			}
-		}
-    });
+	// $('.client-wrap').owlCarousel({
+	// 	loop:true,
+	// 	margin:30,
+	// 	nav:false,
+	// 	mouseDrag: true,
+	// 	items:1,
+	// 	dots: false,
+	// 	autoHeight: true,
+	// 	autoplay: true,
+	// 	smartSpeed: 800,
+	// 	autoplayHoverPause: true,
+	// 	center: false,
+	// 	responsive:{
+	// 		0:{
+	// 			items:1,
+	// 			margin: 10,
+	// 		},
+	// 		576:{
+	// 			items:1,
+	// 		},
+	// 		768:{
+	// 			items:2,
+	// 			margin: 20,
+	// 		},
+	// 		992:{
+	// 			items:2,
+	// 		},
+	// 		1200:{
+	// 			items:2,
+	// 		}
+	// 	}
+    // });
     
     // Services Item Wrap
 	$('.services-item-wrap').owlCarousel({
@@ -189,13 +189,7 @@ jQuery(function ($) {
         },
     });
 
-    // FAQ Accordion
-    // $('.accordion').find('.accordion-title').on('click', function() {
-    //     $(this).toggleClass('active');
-    //     $(this).next().slideToggle('fast');
-    //     $('.accordion-content').not($(this).next()).slideUp('fast');
-    //     $('.accordion-title').not($(this)).removeClass('active');
-    // });
+  
 
     // Subscribe form
     $(".newsletter-form").validator().on("submit", function(event) {

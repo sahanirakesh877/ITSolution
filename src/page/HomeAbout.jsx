@@ -67,10 +67,8 @@ const HomeAbout = () => {
             </div>
             <div className="col-lg-6 col-md-12">
               <div className="company-img">
-                <img
-                  src="assets/images/company/company-img.jpg"
-                  alt="company"
-                />
+              <img src="/svg/svg4.jpg" alt="company" />
+
               </div>
             </div>
           </div>
@@ -112,7 +110,7 @@ const HomeAbout = () => {
                   even slightly believable. If you are going There are many
                   variations of passages of Lorem Ipsum available, but the.
                 </p>
-                <a href="contact.html" className="box-btn">
+                <a href="/contact" className="box-btn">
                   Contact Us
                 </a>
               </div>
@@ -167,7 +165,7 @@ const HomeAbout = () => {
             </div>
             <div className="col-lg-6">
               <div className="feature-img">
-                <img src="/assets/images/feature-img.png" alt="feature" />
+              <img src="/svg/svg3.jpg" alt="company" />
               </div>
             </div>
           </div>

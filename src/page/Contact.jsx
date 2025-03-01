@@ -141,8 +141,8 @@ const Contact = () => {
         </div>
       </div>
       <div className="col-lg-6 col-md-6">
-        <div className="contact-img contact-img-2">
-          <img src="/assets/images/contact-img2.jpg" alt="contact" />
+        <div className="contact-im contact-img-2">
+          <img src="/svg/svg1.jpg" alt="contact" />
         </div>
       </div>
     </div>

@@ -12,25 +12,24 @@ const Faq = () => {
       icon: "flaticon-friends",
       title: "Great Understanding",
       content:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt sit amet consectetur adipiscing.",
+      "We are a trusted IT solutions provider with a proven track record of delivering innovative and reliable services to businesses worldwide.",
     },
     {
       icon: "flaticon-chip",
       title: "Update Technology",
       content:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt sit amet consectetur adipiscing.",
-    },
+      "We are a trusted IT solutions provider with a proven track record of delivering innovative and reliable services to businesses worldwide.",    },
     {
       icon: "flaticon-like",
       title: "Experienced Team",
       content:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt sit amet consectetur adipiscing.",
+      "Our team consists of highly skilled professionals with years of experience in software development, cybersecurity, and IT consulting.",
     },
     {
       icon: "flaticon-award",
       title: "Best Quality Service",
       content:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt sit amet consectetur adipiscing.",
+      "We prioritize quality, innovation, and customer satisfaction, ensuring that every project is delivered on time and exceeds expectations.",
     },
   ];
 
@@ -38,18 +37,18 @@ const Faq = () => {
     <section className="choose-area ptb-100">
       <div className="container">
         <div className="section-title">
-          <span>Choose Paso</span>
-          <h2>We Achieved People’s Trust by Our Great Service</h2>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis
-            ipsum suspendisse.
+        <span>Why Choose Us?</span>
+        <h2>Trusted IT Solutions for Your Business</h2>
+        <p>
+            We provide innovative and reliable IT solutions to help businesses
+            thrive in the digital age. Explore why we are the preferred choice
+            for our clients.
           </p>
         </div>
         <div className="row align-items-center">
           <div className="col-lg-5">
             <div className="choose-img">
-              <img src="assets/images/choose-img.png" alt="choose" />
+              <img src="/svgf/svg4.png" alt="choose" />
             </div>
           </div>
           <div className="col-lg-7">
