@@ -1,4 +1,6 @@
 import React from 'react'
+import servicedata from '../data/serviceData';
+import { Link } from 'react-router-dom';
 
 const Service = () => {
   return (
@@ -11,7 +13,23 @@ const Service = () => {
       <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse.</p>
     </div>
     <div className="row">
-      <div className="col-lg-4 col-sm-6">
+    {servicedata.map((service,title) => (
+        <div className="col-lg-4 col-sm-6" key={service.id}>
+          <div className="single-service">
+            <div className="service-img">
+              <img src={service.img} alt={service.title} />
+            </div>
+            <div className="service-content">
+              <h3>{service.title}</h3>
+              <p>{service.subtitle}</p>
+              <Link to={`/service/${service.title.toLowerCase().replace(/\s+/g, '-')}`} className="line-bnt">
+              Read More
+              </Link>
+            </div>
+          </div>
+        </div>
+      ))}
+      {/* <div className="col-lg-4 col-sm-6">
         <div className="single-service">
           <div className="service-img">
             <img src="/assets/images/service/s1.png" alt="service" />
@@ -24,8 +42,8 @@ const Service = () => {
             </a>
           </div>
         </div>
-      </div>
-      <div className="col-lg-4 col-sm-6">
+      </div> */}
+      {/* <div className="col-lg-4 col-sm-6">
         <div className="single-service">
           <div className="service-img">
             <img src="/assets/images/service/s2.png" alt="service" />
@@ -94,7 +112,7 @@ const Service = () => {
             </a>
           </div>
         </div>
-      </div>
+      </div> */}
     </div>
   </div>
 </section>

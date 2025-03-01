@@ -1,9 +1,39 @@
-import React from "react";
+import React from 'react'
 
-const TechnlogyUsed = () => {
+const Tech = () => {
   return (
     <>
-     
+      <div className="page-title-area">
+        <div className="container">
+          <div className="page-title-content">
+            <h2>Case Studies</h2>
+            <ul>
+              <li>
+                <a href="index.html">Home</a>
+              </li>
+              <li className="active">Case Studies</li>
+            </ul>
+          </div>
+        </div>
+        <div className="page-shape">
+          <div className="shape1">
+            <img src="assets/images/shape/1.png" alt="shape" />
+          </div>
+          <div className="shape3">
+            <img src="assets/images/shape/3.png" alt="shape" />
+          </div>
+          <div className="shape4">
+            <img src="assets/images/shape/4.png" alt="shape" />
+          </div>
+          <div className="shape5">
+            <img src="assets/images/shape/5.png" alt="shape" />
+          </div>
+          <div className="shape6">
+            <img src="assets/images/shape/6.png" alt="shape" />
+          </div>
+        </div>
+      </div>
+      {/* End Page Title Area */}
 
       {/*  Case Studies  */}
       <section className="home-case pt-100 pb-70">
@@ -174,10 +204,9 @@ const TechnlogyUsed = () => {
             </p>
           </div>
         </div>
-      </section>
-      {/* End Case Studies */}
+      </section> 
     </>
-  );
-};
+  )
+}
 
-export default TechnlogyUsed;
+export default Tech

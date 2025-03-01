@@ -3,6 +3,8 @@ import React from "react";
 const Banner = () => {
   return (
     <>
+
+    
       <section className="banner-area">
         <div className="d-table">
           <div className="d-table-cell">
@@ -10,18 +12,17 @@ const Banner = () => {
               <div className="row align-items-center">
                 <div className="col-lg-6">
                   <div className="banner-content">
-                    <h1>Trusted Effective Service and Solutions</h1>
+                    <h1>Innovative Tech Solutions for Your Business</h1>
                     <p>
-                      Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-                      et sed do eiusmod tempor incididunt labore dolore magna
-                      aliqua. Quis ipsum suspendisse.
+                    We provide cutting-edge technology solutions to help businesses thrive in the digital era. From software development to IT consulting, we ensure seamless innovation and growth.
+
                     </p>
                     <div className="banner-btn">
                       <a href="contact.html" className="box-btn">
-                        Contact Us
+                      Get in Touch
                       </a>
                       <a href="about.html" className="box-btn border-btn">
-                        Know More
+                      Learn More
                       </a>
                     </div>
                   </div>
@@ -59,6 +60,9 @@ const Banner = () => {
           </div>
         </div>
       </section>
+
+
+
     </>
   );
 };

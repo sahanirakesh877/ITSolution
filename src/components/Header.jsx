@@ -7,15 +7,15 @@ const Header = () => {
   <div className="container">
     <div className="row align-items-center">
       <div className="col-lg-2 col-sm-0">
-        <div className="logo">
-          <a href="index.html"><img src="/assets/images/logo.png" alt="logo" /></a>
+        <div className="logo ">
+          <a href="/"><img src="/logos.png" alt="logo" /></a>
         </div>
       </div>
-      <div className="col-lg-8 col-sm-8 text-right pr-0">
+      <div className="col-lg-8 col-sm-8 text-right pr-0 ">
         <div className="header-content-right">
           <ul className="header-contact">
             <li><a href="tel:+1123456789"><i className="bx bxs-phone-call" /> +1 123 456 789</a></li>
-            <li><a href="mailto:hello@paso.com"><i className="bx bxs-envelope" /> hello@paso.com</a></li>
+            <li><a href="mailto:hello@paso.com"><i className="bx bxs-envelope" />netcorenepal@gmail.com</a></li>
           </ul>
         </div>
       </div>

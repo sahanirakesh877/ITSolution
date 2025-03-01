@@ -1,6 +1,13 @@
 import React from "react";
+import { useParams } from "react-router-dom";
+import servicedata from "../data/serviceData";
 
 const ServiceDetails = () => {
+  const {title}=useParams()
+  const service = servicedata.find((item) => item.title.toLowerCase().replace(/\s+/g, '-') === title); // Find the service by title
+  if (!service) {
+    return <div>Service not found!</div>; // Handle invalid IDs
+  }
   return (
     <>
       {/* Start Page Title Area */}
@@ -41,33 +48,7 @@ const ServiceDetails = () => {
       <section className="services-details-area ptb-100">
         <div className="container">
           <div className="row">
-            <div className="col-lg-6">
-              <div className="services-img mb">
-                <img src="/assets/images/solutions-details/1.png" alt="Image" />
-              </div>
-            </div>
-            <div className="col-lg-6">
-              <div className="services-item-wrap owl-carousel owl-theme">
-                <div className="services-item">
-                  <img
-                    src="/assets/images/solutions-details/2.png"
-                    alt="Image"
-                  />
-                </div>
-                <div className="services-item">
-                  <img
-                    src="/assets/images/solutions-details/3.png"
-                    alt="Image"
-                  />
-                </div>
-                <div className="services-item">
-                  <img
-                    src="/assets/images/solutions-details/4.png"
-                    alt="Image"
-                  />
-                </div>
-              </div>
-            </div>
+            
             <div className="col-12">
               <div className="services-details-text">
                 <h2>IT Management</h2>
@@ -123,9 +104,10 @@ const ServiceDetails = () => {
               </div>
             </div>
           </div>
+
           <div className="scrives-item-2 mt-4 ">
             <div className="row align-items-center">
-              <div className="col-lg-4">
+              <div className="col-lg-6">
                 <div className="services-img mb-qc">
                   <img
                     src="/assets/images/solutions-details/5.png"
@@ -133,8 +115,8 @@ const ServiceDetails = () => {
                   />
                 </div>
               </div>
-              <div className="col-lg-8">
-                <h3>QA Testing</h3>
+              <div className="col-lg-6">
+                <h3>{service.title}</h3>
                 <p>
                   There are many variations of passages of Lorem Ipsum
                   available, but the majority have suffered alteration in some
@@ -153,44 +135,7 @@ const ServiceDetails = () => {
               </div>
             </div>
           </div>
-          <div className="scrives-item-3 mt-4">
-            <div className="row align-items-center">
-              <div className="col-lg-6 col-sm-6">
-                <div className="social">
-                  <ul className="social-link">
-                    <li>
-                      <a href="https://www.facebook.com/" target="_blank">
-                        <i className="bx bxl-facebook" />
-                      </a>
-                    </li>
-                    <li>
-                      <a href="https://www.facebook.com/" target="_blank">
-                        <i className="bx bxl-twitter" />
-                      </a>
-                    </li>
-                    <li>
-                      <a href="https://www.facebook.com/" target="_blank">
-                        <i className="bx bxl-pinterest-alt" />
-                      </a>
-                    </li>
-                    <li>
-                      <a href="https://www.facebook.com/" target="_blank">
-                        <i className="bx bxl-instagram" />
-                      </a>
-                    </li>
-                  </ul>
-                </div>
-              </div>
-              <div className="col-lg-6 col-sm-6">
-                <div className="share">
-                  <a href="blog-details.html">
-                    <i className="bx bx-share-alt" />
-                    Share
-                  </a>
-                </div>
-              </div>
-            </div>
-          </div>
+         
         </div>
       </section>
       {/* End Services Details Area */}

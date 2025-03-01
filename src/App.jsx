@@ -1,19 +1,25 @@
 import "./App.css";
 import { Route, Routes } from "react-router-dom";
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
 
 import Home from "./page/Home";
 import Service from "./page/Service";
 import Contact from "./page/Contact";
 import ServiceDetails from "./page/ServiceDetails";
-import Blog from "./page/Blog";
-import BlogDetails from "./page/BlogDetails";
 import Header from "./components/Header";
 import Footer from "./components/Footer";
 import Navbar from "./components/Navbar";
 import HomeAbout from "./page/HomeAbout";
+import Tech from "./page/Tech";
 
 const App = () => {
+  const [isMobile, setIsMobile] = useState(window.innerWidth <= 768);
+  useEffect(() => {
+    const handleResize = () => setIsMobile(window.innerWidth <= 768);
+    window.addEventListener("resize", handleResize);
+
+    return () => window.removeEventListener("resize", handleResize);
+  }, []);
   useEffect(() => {
     const loadScript = (src) => {
       const script = document.createElement("script");
@@ -40,16 +46,15 @@ const App = () => {
   }, []);
   return (
     <>
-      <Header />
+      {!isMobile && <Header />}
       <Navbar />
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/service" element={<Service />} />
-        <Route path="/service/:id" element={<ServiceDetails />} />
+        <Route path="/service/:title" element={<ServiceDetails />} />
         <Route path="/about" element={<HomeAbout />} />
         <Route path="/contact" element={<Contact />} />
-        <Route path="/blog" element={<Blog />} />
-        <Route path="/blog/:id" element={<BlogDetails />} />
+        <Route path="/tech" element={<Tech />} />
       </Routes>
       <Footer />
     </>

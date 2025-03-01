@@ -72,7 +72,8 @@ button:focus {
 }
 
 .h1, .h2, .h3, .h4, .h5, .h6, h1, h2, h3, h4, h5, h6 {
-  color: #293a5c;
+  /* color: #293a5c; */
+  color: #d90731;
   font-family: "Catamaran", sans-serif;
   font-weight: 700;
 }
@@ -447,8 +448,8 @@ Go Top Style*/
   text-align: center;
   overflow: hidden;
   z-index: 1;
-  background-color: #1d42d9;
-  border: 1px solid #1d42d9;
+  background-color: #d90731;
+  border: 1px solid #d90731;
 }
 
 .box-btn::before {
@@ -628,7 +629,7 @@ Header Area Css
 ======================================================*/
 .header-area {
   position: relative;
-  padding: 15px 0;
+  padding: 5px 0;
   background: #f5faff;
   overflow: hidden;
 }
@@ -1032,6 +1033,7 @@ Navbar Area Css
   position: relative;
   top: 3px;
   width: 191px;
+  
 }
 
 .navbar-area .nav-right {
