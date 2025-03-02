@@ -50,73 +50,7 @@ import {
 const TechnologyUsed = () => {
   const [activeFilter, setActiveFilter] = useState("web");
 
-  // const technologies = [
-  //   { id: 1, category: "web", icon: faHtml5, name: "HTML5" },
-  //   { id: 2, category: "web", icon: faCss3Alt, name: "CSS3" },
-  //   { id: 3, category: "web", icon: faJsSquare, name: "JavaScript" },
-  //   { id: 4, category: "web", icon: faReact, name: "React.js" },
-  //   { id: 5, category: "web", icon: faVuejs, name: "Vue.js" },
-  //   { id: 6, category: "web", icon: faAngular, name: "Angular" },
-  //   { id: 7, category: "web", icon: faNodeJs, name: "Node.js" },
-  //   { id: 8, category: "mobile", icon: faReact, name: "React Native" },
-  //   { id: 9, category: "mobile", icon: faAndroid, name: "Android" },
-  //   { id: 10, category: "mobile", icon: faApple, name: "iOS" },
-  //   { id: 11, category: "mobile", icon: faMobileAlt, name: "Flutter" },
-  //   {
-  //     id: 12,
-  //     category: "graphics",
-  //     icon: faPaintBrush,
-  //     name: "Adobe Photoshop",
-  //   },
-  //   { id: 13, category: "graphics", icon: faSketch, name: "Sketch" },
-  //   { id: 14, category: "graphics", icon: faFigma, name: "Figma" },
-  //   { id: 15, category: "graphics", icon: faPaintBrush, name: "Canva" },
-  //   {
-  //     id: 16,
-  //     category: "marketing",
-  //     icon: faBullhorn,
-  //     name: "SEO Optimization",
-  //   },
-  //   { id: 17, category: "marketing", icon: faGoogle, name: "Google Ads" },
-  //   {
-  //     id: 18,
-  //     category: "marketing",
-  //     icon: faChartLine,
-  //     name: "Google Analytics",
-  //   },
-  //   {
-  //     id: 19,
-  //     category: "marketing",
-  //     icon: faBullhorn,
-  //     name: "Social Media Marketing",
-  //   },
-  //   { id: 20, category: "database", icon: faDatabase, name: "MongoDB" },
-  //   { id: 21, category: "database", icon: faDatabase, name: "MySQL" },
-  //   { id: 22, category: "database", icon: faDatabase, name: "PostgreSQL" },
-  //   { id: 23, category: "database", icon: faDatabase, name: "Firebase" },
-  //   { id: 24, category: "cloud", icon: faAws, name: "AWS" },
-  //   { id: 25, category: "cloud", icon: faCloud, name: "Azure" },
-  //   { id: 26, category: "cloud", icon: faGoogle, name: "Google Cloud" },
-  //   { id: 27, category: "cloud", icon: faCloud, name: "DigitalOcean" },
-  //   { id: 28, category: "devops", icon: faDocker, name: "Docker" },
-  //   { id: 29, category: "devops", icon: faJenkins, name: "Jenkins" },
-  //   { id: 30, category: "devops", icon: faLinux, name: "Linux" },
-  //   { id: 31, category: "devops", icon: faNetworkWired, name: "Terraform" },
-  //   { id: 32, category: "security", icon: faShieldAlt, name: "Cybersecurity" },
-  //   {
-  //     id: 33,
-  //     category: "security",
-  //     icon: faShieldAlt,
-  //     name: "Penetration Testing",
-  //   },
-  //   {
-  //     id: 34,
-  //     category: "security",
-  //     icon: faShieldAlt,
-  //     name: "Firewall Management",
-  //   },
-  // ];
-
+ 
 
   const technologies = [
     { id: 1, category: "web", icon: faHtml5, name: "HTML5" },
@@ -204,18 +138,23 @@ const TechnologyUsed = () => {
         >
           {[
             { name: "Web Development", filter: "web" },
+            { name: "Digital Marketing", filter: "marketing" },
+
             { name: "Mobile Apps", filter: "mobile" },
             { name: "Graphics Design", filter: "graphics" },
-            { name: "Digital Marketing", filter: "marketing" },
             { name: "Databases", filter: "database" },
-            { name: "Cloud & DevOps", filter: "cloud" },
             { name: "Security", filter: "security" },
+            { name: "Cloud & DevOps", filter: "cloud" },
+            
           ].map((btn) => (
             <button
               key={btn.filter}
               onClick={() => handleFilterClick(btn.filter)}
               style={{
-                margin: "10px",
+                // marginLeft: "4px",
+                // marginRight: "4px",
+                margin:"8px",
+                // marginBottom:"20px",
                 padding: "6px 10px",
                 background: activeFilter === btn.filter ? "#D90731" : "#fff",
                 color: activeFilter === btn.filter ? "#fff" : "#051242",
@@ -252,8 +191,8 @@ const TechnologyUsed = () => {
                 cursor: "pointer",
                 clipPath:
                   "polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%)", // Hexagon shape
-                width: "130px",
-                height: "153px",
+                width: "110px",
+                height: "113px",
                 display: "flex",
                 flexDirection: "column",
                 justifyContent: "center",
@@ -273,7 +212,7 @@ const TechnologyUsed = () => {
               <FontAwesomeIcon
                 icon={item.icon}
                 style={{
-                  fontSize: "50px",
+                  fontSize: "40px",
                   color: "#D90731",
                   marginBottom: "5px",
                 }}
