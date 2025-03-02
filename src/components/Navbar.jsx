@@ -4,13 +4,16 @@ import { Link } from "react-router-dom";
 const Navbar = () => {
   return (
     <>
-      <div className="navbar-area">
+      <div className="navbar-area ">
         <div className="mobile-nav ">
           <Link to="/" className="logo  ">
             <img src="/logos.png" alt="logo" />
           </Link>
+          {/* <Link to="/" className="logo  ">
+            <img src="/logo.png" alt="logo" />
+          </Link> */}
         </div>
-        <div className="main-nav">
+        <div className="main-nav ">
           <div className="container">
             <nav className="navbar navbar-expand-md navbar-light">
               <div
